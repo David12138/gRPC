@@ -1,0 +1,24 @@
+//语言版本
+syntax = "proto3";
+
+//命名空间
+option csharp_namespace = "GrpcGreeter";
+
+//包
+package greet;
+
+// 服务定义
+service Greeter {
+  // 会话方法
+  rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+// 请求参数格式
+message HelloRequest {
+  string name = 1;
+}
+
+// 响应参数格式
+message HelloReply {
+  string message = 1;
+}

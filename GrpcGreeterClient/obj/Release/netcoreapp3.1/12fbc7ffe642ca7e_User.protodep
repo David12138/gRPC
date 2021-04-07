@@ -1,0 +1,2 @@
+obj\Release\netcoreapp3.1\Protos/User.cs \
+obj\Release\netcoreapp3.1\Protos/UserGrpc.cs: Protos/User.proto
